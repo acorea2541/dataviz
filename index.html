@@ -1,7 +1,15 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+
     <title>Data Visualization Project</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
     <style>
         h1 {
             text-align: center;
@@ -37,6 +45,7 @@
 
 <body bgcolor="beefed">
     <h1 style="font-size:50px;">Data Visualization Project</h1>
+    <p>Designers: Abraham Corea Diaz & Giselle Bourelly</p>
     <p> </p>
     <h1 style="font-size:30px;">Data Visualization Example</h1>
     <p>The example of data visualizaton I chose was called "The Voting Habits of Americans Like You" by the New York Times. This visualization showed the breakdown of percentages of voters based on different demographic identifiers, such as race, gender,
@@ -65,9 +74,20 @@
     <img src="vizsketch.JPG" alt="Image of Data Visual" style="width:667px;height:500px;">
     <h1 style="font-size:30px;">Data Collection Process</h1>
     <img src="process.JPG" alt="Image of Device In Action on BART" style="width:667px;height:500px;">
-    <p>So far, we have hooked up the GPS, microphone, and SD card to an Arduino Pro Mini microcontroller and a battery, all of which we are now storing in a nice red box - better than a cut-open empty Kleenex box. We have conducted trials both at school and in BART, but we have been having trouble getting a "fix" on the GPS on BART. A possible solution may be to try to get a fix outside of the BART station and then connecting the SD card on the train so that only BART sound data is recorded.</p>
+    <p>So far, we have hooked up the GPS, microphone, and SD card to an Arduino Pro Mini microcontroller and a battery, all of which we are now storing in a nice red box - better than a cut-open empty Kleenex box. We have conducted trials both at school and in BART, but we have been having trouble getting a "fix" on the GPS on BART. A possible solution may be to try to get a fix outside of the BART station and then connect the SD card on the train so that only BART sound data is recorded.</p>
     <p>UPDATE: Our proposed solution worked! We are now collecting data on our daily BART rides to and from school, as shown in the image above. However, due to some sections of the BART route being underground, we are unable to collect GPS data for a part of the trip.</p>
-
+    <h1 id="button" style="font-size:30px;">Final Bart Noise Data Visualization<br><br></h1>
+    <p id="canvas" style="padding: 0; margin: 0;"></p>
+    <p>Our data visualization shows different levels of noise recorded between BART stations, indicated by the height of the lines in between the stations on the graph. The color and volt setting offers some additional information, indicating the noise levels with different colors and displaying an average recorded volt measurement for each section of the tracks.</p>
+    <p style="font-size:25px;">Class Reflection Questions:</p>
+    <p>1. Explain your data collection and visualization theme.</p>
+<p>Our theme was collecting data about the noise levels in between different BART station on our routes to and from school.</p>
+<p>2. What is the story you interpret and/or what did you learn from your data collection and visualization?</p>
+<p>From our data, we learned that sections of the BART track that are in tunnels or underground were the loudest. From the process of collecting data, we learned how to problem solve for losing GPS signal underground.</p>
+<p>3. Is your visualization complete? Anything you want to change or improve?</p>
+<p>The visualization is now complete. We would have liked to conduct more data collection from MacArthur to Balboa because we lost data from a device malfunction. There is also always room for improvement with the aesthetic and ease of understanding.</p>
+<p>4. What part of this project are you confident about?</p>
+<p>The data that Abraham was actually able to collect in between Balboa and Millbrae was reinforced by many different trials. So that part of the data should be solid.</p>
 
 </body>
 
